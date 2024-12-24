@@ -14,7 +14,7 @@ Modern deep learning models often involve overparameterized architectures, leadi
 1. **Structured Sparsity**:
    - Induces sparsity at the **filter/channel level**, enabling efficient deployment on hardware accelerators.
 2. **Reparameterization**:
-   - Implements the Spred algorithm to reparameterize sparse weights as products of auxiliary variables, \( U \) and \( W \), for smooth optimization.
+   - Implements the Spred algorithm to reparameterize sparse weights as products of auxiliary variables, $U$ and $W$, for smooth optimization.
 3. **Optimizers**:
    - Experiments conducted with **SGD**, **Adam**, **AdamW**, and **Adagrad**.
 4. **Comparison**:
@@ -60,7 +60,7 @@ spred_structured_sparsity_project/
      $V_s = U \times W\$
    - Penalties are applied to $U$ and $W$ to promote sparsity, transforming non-differentiable $L_1$ penalties into smooth $L_2$ norm penalties:
    
-     $\text{Penalty} = \lambda (\|U\|_2^2 + \|W\|_2^2)$
+     $Penalty = \lambda (\|U\|_2^2 + \|W\|_2^2 )$
 
 2. **Structured Sparsity**:
    - Targets **entire filters or channels** in CNNs, reducing computational cost while preserving network structure.
