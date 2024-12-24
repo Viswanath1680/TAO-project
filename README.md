@@ -1,1 +1,1 @@
-# TAO project, CNN with structured Sparsity
+# Spred Algorithm implementation
